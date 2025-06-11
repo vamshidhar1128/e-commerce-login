@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: e-commerce
-          image: vamshidhar1128/e-commerce:latest
+          image: vamshidhar1128/ecom
           ports:
             - containerPort: 8081
