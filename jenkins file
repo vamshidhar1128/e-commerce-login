@@ -1,1 +1,17 @@
+pipeline {
+    agent any
+tools{
+maven 'maven'
+}
 
+    stages {
+        stage('gitcheckout') {
+            steps {
+                git branch: 'main',
+                    changelog: false,
+                    poll: false,
+                    url: 'https://github.com/vamshidhar1128/e-commerce-login'
+            }
+        }
+    }
+}
